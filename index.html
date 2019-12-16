@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./main css/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <title>Infinity Creations</title>
+    
 </head>
 <body>
     <section class="main">
-        <section class="header">
+        <section class="header" id="top">
             <div class="header_container">
                 <div class="logo_title">
-                    <img src="./images/undraw_Designer_by46 1.svg" alt="">
-                    <a href=""><span>InfinityCreations</span></a>
+                    <a href="./index.html">
+                        <img src="./images/undraw_Designer_by46 1.svg" alt="">
+
+                    </a>
+                    <a href="./index.html"><span>InfinityCreations</span></a>
                 </div>
                 <div class="nav">
                     <nav>
-                        <a href="">About</a>
+                        <a href="./main content/about.html">About</a>
                         <a href="">Discover</a>
                     </nav>
                     <a href=""><button>Contact</button></a>
@@ -35,35 +40,36 @@
         <section class="album">
             <div class="album_container">
                 <div class="album_content">
-                    <h1>Photo Album</h1>
-                    <p>A great photograph is a full expression of what one feels about what is being photographed in the deepest sense and is thereby a true expression of what one feels about life in its entirety</p>
+                    <h1 data-sal-duration="500"
+                    data-sal="slide-right"
+                    data-sal-easing="ease-out-bounce">Cinematography</h1>
+                    <p data-sal-duration="500"
+                    data-sal="slide-right"
+                    data-sal-easing="ease-out-bounce">A great photograph is a full expression of what one feels about what is being photographed in the deepest sense and is thereby a true expression of what one feels about life in its entirety</p>
                     <a href=""><button>View more..</button></a>
                 </div>
-                <div class="album_pic">
+                <div class="album_pic" data-sal-duration="500"
+                                    data-sal="slide-left"
+                                    data-sal-easing="ease-out-bounce">
                     <img src="./images/album intro.jpg" alt="">
                 </div>
             </div>
         </section>
 
         <section class="videos">
-            <!-- <div class="videos_container">
-                <div>
-                    <video controls>
-                        <source src="./videos/video 1.mp4" type="video/mp4">
-                    </video>
-                    <video controls>
-                        <source src="./videos/video 2.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div> -->
-            <div class="video_cover">
-                <video autoplay muted>
+            <div class="video_cover" data-sal-duration="300"
+            data-sal="slide-up"
+            data-sal-easing="ease-out-bounce">
+                <video autoplay muted loop>
                     <source src="./videos/video 3.mp4" type="video/mp4">
                 </video>
             </div>
         </section>
 
-        <section class="webdesign">
+        <section class="webdesign" data-sal-duration="300"
+        data-sal="zoom-in"
+        data-sal-easing="ease-out-bounce">
+            <h1>Web Design</h1>
             <div class="webdesign_container">
                 <div class="https">
                     <div>
@@ -86,6 +92,146 @@
             </div>
         </section>
 
+        <section class="us">
+            <div class="us_container">
+                <h1 data-sal-duration="500"
+                data-sal="flip-up"
+                data-sal-easing="ease-out-bounce">Who we are?</h1>
+                <p data-sal-duration="500"
+                data-sal="flip-up"
+                data-sal-easing="ease-out-bounce">Wedding Photography and Wedding Film</p>
+                <div class="us_content">
+                    <div class="us_left" data-sal-duration="500"
+                    data-sal="slide-right"
+                    data-sal-easing="ease-out-bounce">
+                        <p>We prefer a journalistic approach. We are not directors, but reporters, so in a discreet and complete way we reflect the extraordinary atmosphere of your great day and the accompanying emotions. The dates of outdoor sessions are set individually for each couple. We are open to taking pictures on the wedding day as well as on any other of your choice.We have a certificate that allows us to photograph church ceremonies issued by the Diocesan Curia. If you like our approach to work and photos, we will meet and discuss the details of cooperation.</p>
+                    </div>
+                    <div class="us_right" data-sal-duration="500"
+                    data-sal="slide-left"
+                    data-sal-easing="ease-out-bounce">
+                        <p>We value the naturalness of all photos and videos taken. We assume that the role of the filmmaker and photographer at the wedding is largely based on being the least visible. We act as observers. Setting guests and the bride and groom asking for a wide smile is simply unnatural, contrary to our principles of work. We try to make you feel at ease with me. We want to show what you really feel in depth. Good wedding photography is a powerful emotional charge combined with spontaneity. If that's what you are looking for, we invite you to cooperation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div>
+                <h1 data-sal-duration="500"
+                data-sal="fade"
+                data-sal-easing="ease-out-bounce">Let's Talk</h1>
+                <p>We want to know as much as possible about your special day. <br> Together we will create a story of your love.</p>
+                <a href=""><button>Write to us!</button></a>
+            </div>
+        </section>
+
+        <section class="our_work">
+            <div class="our_work_container">
+                <h1>WHAT WE DO</h1>
+                <p>WEDDINGS & DESIGN</p>
+                <div class="our_work_content"data-sal-duration="500"
+                data-sal="flip-up"
+                data-sal-easing="ease-out-bounce">
+                    <div>
+                        <img src="./icons/camera.svg" alt="">
+                        <h1>Photography</h1>
+                        <span>Wedding</span><br>
+                        <span>Candid</span><br>
+                        <span>Maternity and Kids</span>
+                    </div>
+                    <div>
+                        <img src="./icons/video-camera.svg" alt="">
+                        <h1>Videography</h1>
+                        <span>Wedding</span><br>
+                        <span>candid</span><br>
+                        <span>Concept-based</span>
+                    </div>
+                    <div>
+                        <img src="./icons/movie.svg" alt="">
+                        <h1>Cinematography</h1>
+                        <span>Wedding-Themed</span><br>
+                        <span>Candid</span><br>
+                        <span>Film or Documentary</span>
+                    </div>
+                    <div>
+                        <img src="./icons/round.svg" alt="">
+                        <h1>Design</h1>
+                        <span>Weddind Album</span><br>
+                        <span>Family & Function Album</span><br>
+                        <span>Photo Album</span>
+                    </div>
+                    <div>
+                        <img src="./icons/video.svg" alt="">
+                        <h1>Editing</h1>
+                        <span>Wedding Video</span><br>
+                        <span>Family & Function Video</span><br>
+                        <span>Music Album, Films, Documentaries</span>
+                    </div>
+                    <div>
+                        <img src="./icons/love.svg" alt="">
+                        <h1>Web Design</h1>
+                        <span>Responsive Designs</span><br>
+                        <span>Free Hosting</span><br>
+                        <span>Cheapest Domains</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer_container">
+                <div class="footer_thick" data-sal-duration="500"
+                data-sal="slide-right"
+                data-sal-easing="ease-out-bounce">
+
+                </div>
+                <div class="footer_content">
+                    <div class="footer_intro" data-sal-duration="500"
+                    data-sal="slide-right"
+                    data-sal-easing="ease-out-bounce">
+                        <h1>Infinity Creations</h1>
+                        <h1>capture youre beautiful</h1>
+                        <h1>moments</h1>
+                    </div>
+                    <div class="footer_copyright" data-sal-duration="500"
+                    data-sal="flip-up"
+                    data-sal-easing="ease-out-bounce">
+                        <h1>Copyright</h1>
+                        <p>&copy 2019 Infinity Creations <br>
+                        Dveloped and Managed by Infinity Creations</p>
+                    </div>
+                    <div class="footer_contact" data-sal-duration="500"
+                    data-sal="flip-up"
+                    data-sal-easing="ease-out-bounce">
+                        <h1>Contact</h1>
+                        <address>
+                            Parakuntru <br> Kanniyakumari 
+                        </address>
+                        <span>+91 7502 869 323</span><br>
+                        <span><a href="">abishp3@gmail.com</a></span>
+                    </div>
+                    <div class="footer_links" data-sal-duration="500"
+                    data-sal="slide-left"
+                    data-sal-easing="ease-out-bounce">
+                        <h1>Follow Us</h1>
+                        <a href=""><img src="./icons/facebook-logo.svg" alt=""></a>
+                        <a href=""><img src="./icons/twitter.svg" alt=""></a>
+                        <a href=""><img src="./icons/google-plus.svg" alt=""></a>
+                        <a href=""><img src="./icons/instagram.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCxsaL2CVry2KziMjrSzO5Iw"><img src="./icons/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="top_arrow">
+            <a href="" id="mybtn"><img src="./icons/top arrow.svg" alt=""></a>
+            
+        </div>
     </section>
+    <script src="./script.js"></script>
+    <script src="./node_modules/sal.js/dist/sal.js"></script>
+    <script>
+        sal();
+    </script>
 </body>
 </html>

@@ -1,0 +1,142 @@
+.header_container{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    background-color: #2c3338;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.header img{
+    width: 8vw;
+    height: 8vh;
+}
+.logo_title{
+    display: flex;
+    align-items: center;
+}
+.logo_title a span{
+    font-size: 30px;
+}
+.nav nav a{
+    font-size: 20px;
+    margin-right: 100px;
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+}
+.nav{
+    display: flex;
+}
+.nav button{
+    width: 6vw;
+    height: 4vh;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.nav nav a:nth-child(3){
+    border-radius: 20%;
+    background-color: orangered;
+}
+
+/*about*/
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.about {
+    text-align: center;
+    color: #282628;
+    
+}
+.header_content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #080409;
+}
+@media(max-width:715px){
+    .header_content {
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    .img_photo {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+.img_photo > img {
+    width:22vw;
+    height: 50vh;
+    border-radius: 50px;
+}
+.texts {
+    margin: 10px;
+}
+.texts > p {
+    font-size: 20px;
+    line-height: 5vh;
+}
+.Two_items {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.itemOne, .itemTwo {
+    width: 350px;
+    background-image: linear-gradient(to bottom,#080409 ,#282628);
+    color: #F0F6F4;
+    border-radius: 10px;
+    padding:30px;
+    margin-top: 20px;
+    border-bottom: 10px solid #95A4A8;
+    font-size: 20px;
+}
+.itemOne > h2, .itemTwo > h2 {
+    text-decoration: underline;
+}
+.textinomials {
+    width: 60vw;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+.svgcontent {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.svg >svg {
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
+}
+.content {
+    width: 100%;
+}
+.content p{
+    font-size: 20px;
+    line-height: 1.7;
+}
