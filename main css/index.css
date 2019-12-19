@@ -10,6 +10,9 @@ body,p,h1,h2,h3{
 
 /*header*/
 
+#title{
+    color: #f50057;
+}
 .header_container{
     margin: auto;
     width: 90%;
@@ -31,7 +34,7 @@ body,p,h1,h2,h3{
     color: white;
 }
 .header img{
-    width: 8vw;
+    width: 5vw;
     height: 8vh;
 }
 .logo_title{
@@ -321,7 +324,7 @@ footer{
 .footer_container{
     padding-top: 50px;
     width: 90%;
-    margin: 30px auto;
+    margin: auto;
     display: flex;
     padding-bottom: 50px;
 }

@@ -1,3 +1,13 @@
+body,p,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+#title{
+    color: #f50057;
+}
 .header_container{
     margin: auto;
     width: 90%;
@@ -19,7 +29,7 @@
     color: white;
 }
 .header img{
-    width: 8vw;
+    width: 5vw;
     height: 8vh;
 }
 .logo_title{
@@ -42,7 +52,7 @@
 .nav button{
     width: 6vw;
     height: 4vh;
-    background-color: orangered;
+    background-color: #f50057;
     color: white;
     border: none;
     font-size: 20px;
@@ -59,10 +69,15 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
 .about {
     text-align: center;
     color: #282628;
     
+}
+.aboutfull{
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 .header_content {
     width: 80%;
@@ -94,8 +109,9 @@
     margin: 10px;
 }
 .texts > p {
-    font-size: 20px;
-    line-height: 5vh;
+    font-size: 40px;
+    line-height: 2;
+    color: rgba(0, 0, 0, 0.7);
 }
 .Two_items {
     margin-top: 30px;
@@ -139,4 +155,63 @@
 .content p{
     font-size: 20px;
     line-height: 1.7;
+    font-family: cursive;
+}
+
+/*footer*/
+
+footer{
+    background-color: lightgray;
+}
+.footer_intro h1{
+    font-size: 25px;
+}
+.footer_container{
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 50px;
+}
+.footer_thick{
+    background-color: black;
+    width: 3.5vw;
+    height: 12vh;
+    clip-path: polygon(49% 0, 100% 0%, 52% 99%, 0% 100%);
+}
+.footer_links img{
+    width: 3vw;
+    height: 3vh;
+    margin-top: 20px;
+}
+.footer_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.footer_copyright p{
+    margin-top: 20px;
+}
+.footer_copyright h1{
+    font-size: 25px;
+}
+.footer_contact address{
+    margin-top: 20px;
+}
+.footer_contact h1{
+    font-size: 25px;
+}
+.footer_links h1{
+    font-size: 25px;
+}
+.footer_contact a{
+    color: black;
+}
+
+.top_arrow img{
+    width: 7vw;
+    height: 7vh;
+    position: fixed;
+    bottom: 30px;
+    right: 0;
 }

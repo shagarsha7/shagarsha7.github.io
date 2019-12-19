@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+body,p,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+#title{
+    color: #f50057;
+}
+.header_container{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    background-color: #2c3338;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.header img{
+    width: 5vw;
+    height: 8vh;
+}
+.logo_title{
+    display: flex;
+    align-items: center;
+}
+.logo_title a span{
+    font-size: 30px;
+}
+.nav nav a{
+    font-size: 20px;
+    margin-right: 100px;
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+}
+.nav{
+    display: flex;
+}
+.nav button{
+    width: 6vw;
+    height: 4vh;
+    background-color: #f50057;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.nav nav a:nth-child(3){
+    border-radius: 20%;
+}
+
+/*Showcase*/
+
+.showcase{
+    background: url(../images/contact\ showcase\ 2.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+}
+.showcase_right img{
+    width: 3vw;
+    height: 3vh;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.showcase_container{
+    padding-top: 100px;
+    width: 70%;
+    margin: auto;
+}
+.showcase_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20vw;
+}
+.showcase_left p{
+    font-size: 22px;
+    margin-top: 50px;
+    line-height: 1.3;
+    margin-left: 30px;
+    word-spacing: 20px;
+}
+.showcase_left img{
+    width: 3vw;
+    height: 3vh;
+}
+.showcase_left label{
+    margin-top: 70px;
+    margin-left: 30px;
+    font-size: 30px;
+}
+.showcase_left a{
+    color: #f50057;
+}
+.showcase_left img{
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    width: 5vw;
+    height: 5vh;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.showcase_left h4{
+    margin-left: 30px;
+}
+.showcase_right{
+    text-align: right;
+}
+.showcase_right p{
+    font-size: 20px;
+}
+.showcase_right h3{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+/*contact_form*/
+
+.contact_form h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: oblique;
+    margin-top: 100px;
+}
+.contact_form p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.contact_form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.input_small input{
+    width: 20vw;
+    height: 5vh;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: auto 20px;
+    text-align: center;
+}
+.input_large textarea{
+    width: 35vw;
+    height: 10vh;
+    margin-top: 50px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    resize: none;
+}
+form button{
+    width: 12vw;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 5vh;
+    font-size: 20px;
+    background-color: transparent;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s
+}
+form button:hover{
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+/*footer*/
+
+footer{
+    background-color: lightgray;
+}
+.footer_container{
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 50px;
+}
+.footer_thick{
+    background-color: black;
+    width: 3.5vw;
+    height: 12vh;
+    clip-path: polygon(49% 0, 100% 0%, 52% 99%, 0% 100%);
+}
+.footer_links img{
+    width: 3vw;
+    height: 3vh;
+    margin-top: 20px;
+}
+.footer_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.footer_copyright p{
+    margin-top: 20px;
+}
+.footer_contact address{
+    margin-top: 20px;
+}
+.footer_contact a{
+    color: black;
+}
+
+.top_arrow img{
+    width: 7vw;
+    height: 7vh;
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+}
+
+#map{
+    height: 200px;
+    width: 100%;
+    margin-top: 150px;
+}
+
