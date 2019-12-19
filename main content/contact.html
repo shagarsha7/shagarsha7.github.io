@@ -60,15 +60,15 @@
             data-sal-easing="ease-out-bounce">
                 <h1>Contact Form</h1>
                 <p>Describe how you imagine your special day</p>
-                <form action="">
+                <form action="POST" name="contact" data-netlify="true">
                     <div class="input_small">
                         <input type="text" placeholder="Your Name*">
-                        <input type="text" placeholder="Email*">
+                        <input type="email" placeholder="Email*">
                     </div>
                     <div class="input_large">
-                        <textarea name="" id="" placeholder="Type your message*"></textarea>
+                        <textarea name="message" id="" placeholder="Type your message*"></textarea>
                     </div>
-                    <a href=""><button>Send Message</button></a>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </section>
