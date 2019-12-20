@@ -25,3 +25,38 @@ function initMap() {
     // The marker, positioned at Uluru
     var marker = new google.maps.Marker({position: uluru, map: map});
   }
+
+  
+//   let menus=document.getElementById("menus")
+
+//   function pop(){
+//         if(menus.style.display==="none"){
+//             menus.style.display="grid"
+//         }else{
+//             menus.style.display="none"
+//         }
+//   }
+
+let menus=document.getElementById("menus")
+let menubtn=document.getElementById("menubtn")
+
+document.addEventListener("DOMContentLoaded", init)
+
+function init(){
+    let query=window.matchMedia("(max-width: 740px)");
+
+    if(query.matches){
+        console.log("good")
+        menubtn.onclick=function(){
+            if(menus.style.display==="none"){
+                menus.style.display="grid"
+            }else{
+                menus.style.display="none"
+            }
+      }
+    }else{
+        
+    }
+}
+  
+ 
