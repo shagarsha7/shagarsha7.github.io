@@ -636,9 +636,18 @@ footer{
         width: 5vw;
         height: 5vh;
     }
+    .logo_title img{
+        width: 10vw;
+        height: 8vh;
+    }
 }
 @media(max-width: 350px){
     .showcase{
         min-height: 35vh;
+    }
+}
+@media(max-width: 278px){
+    .showcase{
+        min-height: 28vh;
     }
 }
