@@ -153,6 +153,19 @@ body,p,h1,h2,h3{
 .video_cover video{
     width: 100%;
 }
+.videos{
+    position: relative;
+}
+.video_content{
+    position: absolute;
+    top: 80px;
+}
+.video_content p{
+    color: white;
+    margin-top: 700px;
+    margin-left: 600px;
+    font-size: 40px;
+}
 
 /*webdesign*/
 
