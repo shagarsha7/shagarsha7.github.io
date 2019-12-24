@@ -20,14 +20,15 @@
                     <a href="../index.html"><span>Infinity</span><span id="title">Creations</span></a>
                 </div>
                 <div class="nav">
-                    <nav>
+                    <nav id="menus">
                         <a href="../main content/about.html">About</a>
+                        <a href="">Gallery</a>
                         <a href="">Contact</a>
                     </nav>
                     
                 </div>
                 <div class="menu">
-                    <img src="../icons/menu.svg" alt="">
+                    <img onclick="pop()" id="menubtn" src="../icons/menu.svg" alt="">
                 </div>
             </div>
         </section>
@@ -64,13 +65,13 @@
                 <h1>Contact Form</h1>
                 <p>Describe how you imagine your special day</p>
                 <form action="POST" name="contact" data-netlify="true">
-                    <div class="input_small">
+                    
                         <input type="text" placeholder="Your Name*">
                         <input type="email" placeholder="Email*">
-                    </div>
-                    <div class="input_large">
+                    
+                    
                         <textarea name="message" id="" placeholder="Type your message*"></textarea>
-                    </div>
+                    
                     <button type="submit">Send Message</button>
                 </form>
             </div>

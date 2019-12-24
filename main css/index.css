@@ -53,7 +53,7 @@ body,p,h1,h2,h3{
 }
 .nav nav a{
     font-size: 20px;
-    margin-right: 100px;
+    margin-right: 50px;
     text-decoration: none;
     padding-right: 20px;
     color: white;
@@ -70,8 +70,8 @@ body,p,h1,h2,h3{
 /*showcase*/
 
 .showcase{
-    width: 100%;
-    background: url(../images/showcase.jpg) no-repeat;
+    width: auto;
+    background: url(../images/show\ 3.jpg) no-repeat;
     min-height: 100vh;
     background-size: cover;
     display: flex;
@@ -102,7 +102,7 @@ body,p,h1,h2,h3{
     border: none;
 }
 .showcase_content{
-    
+    margin-left: 100px;
 }
 
 /*album*/
@@ -189,8 +189,16 @@ body,p,h1,h2,h3{
     grid-gap: 200px;
 }
 .responsive img{
-    width: 30vw;
+    width: 40vw;
     height: 49vh;
+}
+.responsive img:hover{
+    transform: scale(1);
+	opacity: 0.5;
+}
+.https img:hover{
+    transform: scale(1);
+	opacity: 0.5;
 }
 .responsive h1{
     text-align: center;
@@ -376,7 +384,7 @@ footer{
 
 @media(max-width:1246px){
     .showcase{
-        background-size: contain;
+        background-size: cover;
     }
     .showcase button{
         width: 15vw;
@@ -485,7 +493,7 @@ footer{
         display: block;
     }
     .showcase{
-        min-height: 90vh;
+        
         width: 100%;
     }
     
@@ -517,14 +525,22 @@ footer{
         font-size: 26px;
     }
     .showcase button{
-        width: 20vw;
-        height: 5vh;
+        width: 40vw;
+        height: 8vh;
         font-size: 20px;
     }
     .showcase{
-        background-size: contain;
-        min-height: 70vh;
         width: 100%;
+    }
+    .album_content{
+        margin-top: 50px;
+    }
+    .album_pic img{
+        margin-top: 70px;
+    }
+    .album_content button{
+        width: 40vw;
+        height: 10vh;
     }
 }
 @media(max-width: 416px){
@@ -545,6 +561,9 @@ footer{
     .showcase h1{
         font-size: 40px;
     }
+    .showcase_content{
+        margin-left: 30px;
+    }
     .showcase button{
         width: 35vw;
         height: 8vh;
@@ -553,6 +572,7 @@ footer{
     }
     .album_content h1{
         font-size: 20px;
+        margin-top: 30px;
     }
     .album_content p{
         font-size: 20px;
@@ -568,6 +588,7 @@ footer{
     .album_pic img{
         width: 70vw;
         height: 80vh;
+        margin: 0;
     }
     .album_container{
         display: grid;
