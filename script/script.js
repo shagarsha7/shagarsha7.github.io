@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", init)
 
 function init(){
     let query=window.matchMedia("(max-width: 740px)");
-
     if(query.matches){
         console.log("good")
         menubtn.onclick=function(){

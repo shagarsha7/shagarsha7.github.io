@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        main{
+            width: 100vw;
+            height: 100vh;
+        }
+        main .container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .showcase_background .bgimg{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: none;
+        }
+        .showcase_content{
+            position: relative;
+            z-index: 2000;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="showcase_background">
+                <img class="bgimg" src="./images/album intro.jpg" target="1" alt="">
+                <img class="bgimg" src="./images/contact showcase 2.jpg" target="2" alt="">
+                <img class="bgimg" src="./images/favicon.png" target="3" alt="">
+                <img class="bgimg" src="./images/undraw_Designer_by46 1.svg" target="4" alt="">
+            </div>
+            <div class="showcase_content">
+                <h1>hELLO WORLD</h1>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let bgImgs=document.querySelectorAll('.bgimg')
+        let totalImgs=bgImgs.length
+        function changeBackground(value){
+            try{
+                bgImgs[value-1].style.display="none"
+            }catch(e){
+                bgImgs[totalImgs-1].style.display="none"
+            }
+            bgImgs[value].style.display="block"
+        }
+        value=0
+        setInterval(()=>{
+            changeBackground(value)        
+            if(value==totalImgs-1){
+                value=0
+                return
+            }
+            value+=1
+        },3000)
+
+    </script>
+</body>
+</html>

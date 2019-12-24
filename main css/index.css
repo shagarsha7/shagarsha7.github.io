@@ -13,6 +13,10 @@ body,p,h1,h2,h3{
 #title{
     color: #f50057;
 }
+.container{
+    width: 90%;
+    margin: auto;
+}
 .header_container{
     margin: auto;
     width: 90%;
@@ -72,7 +76,7 @@ body,p,h1,h2,h3{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     
 }
@@ -98,7 +102,7 @@ body,p,h1,h2,h3{
     border: none;
 }
 .showcase_content{
-    margin-right: 50%;
+    
 }
 
 /*album*/
@@ -177,6 +181,7 @@ body,p,h1,h2,h3{
     font-size: 25px;
     line-height: 2;
     text-align: center;
+    color:rgba(0,0,0,0.7)
 }
 .responsive{
     display: grid;
@@ -197,12 +202,13 @@ body,p,h1,h2,h3{
     font-size: 25px;
     line-height: 2;
     text-align: center;
+    color:rgba(0,0,0,0.7)
 }
 
 /*us*/
 
 .us{
-    background-color: #f2f2f2;
+    background-color: rgb(15, 15, 15);
 }
 .us_container{
     width: 80%;
@@ -210,15 +216,17 @@ body,p,h1,h2,h3{
 }
 .us_container h1{
     padding-top: 50px;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.8);
+    color:rgba(255,255,255,0.7);
+    margin: 0;
+    padding-bottom: 20px;
 }
 .us_container>p{
-    margin-top: 80px;
-    font-size: 40px;
+    
+    font-size: 25px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.8);
+    color:rgba(255,255,255,0.5);
 }
 .us_content{
     margin-top: 50px;
@@ -226,14 +234,17 @@ body,p,h1,h2,h3{
     grid-template-columns: 1fr 1fr;
     grid-gap: 80px;
 }
+
 .us_content p{
-    font-size: 22px;
-    line-height: 2.5;
-    color: rgba(0, 0, 0, 0.6);
-    background-color: white;
-    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    color: rgba(230, 219, 219, 0.6);
+    background-color: rgb(19, 17, 17);
+    text-align: justify;
     margin-bottom: 50px;
     border-radius: 20px;
+    padding: 30px;
+    border:1px solid rgba(255,255,255,0.5)
 }
 
 /*contact*/
@@ -316,6 +327,9 @@ body,p,h1,h2,h3{
 
 footer{
     background-color: lightgray;
+}
+.footer_intro h1{
+    font-size: 20px;
 }
 .footer_container{
     padding-top: 50px;
@@ -510,11 +524,15 @@ footer{
     .showcase{
         background-size: contain;
         min-height: 70vh;
+        width: 100%;
     }
 }
 @media(max-width: 416px){
     .logo_title a span{
         font-size: 25px;
+    }
+    .showcase{
+        background: url(../images/show.jpg) no-repeat;
     }
     .menu img{
         width: 5vw;
@@ -522,16 +540,16 @@ footer{
     }
     .showcase{
         margin-top: 40px;
-        min-height: 45vh;
+        min-height: 100vh;
     }
     .showcase h1{
-        font-size: 20px;
+        font-size: 40px;
     }
     .showcase button{
-        width: 25vw;
-        height: 5vh;
+        width: 35vw;
+        height: 8vh;
         font-size: 10px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
     .album_content h1{
         font-size: 20px;
@@ -544,11 +562,12 @@ footer{
     .album_content button{
         margin-top: 30px;
         width: 50vw;
+        height: 10vh;
         font-size: 20px;
     }
     .album_pic img{
         width: 70vw;
-        height: 50vh;
+        height: 80vh;
     }
     .album_container{
         display: grid;
@@ -580,6 +599,7 @@ footer{
     .us_container>p{
         margin-top: 30px;
         font-size: 20px;
+        color: white;
     }
     .us_content{
         display: grid;
