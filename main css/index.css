@@ -153,19 +153,8 @@ body,p,h1,h2,h3{
 .video_cover video{
     width: 100%;
 }
-.videos{
-    position: relative;
-}
-.video_content{
-    position: absolute;
-    top: 80px;
-}
-.video_content p{
-    color: white;
-    margin-top: 700px;
-    margin-left: 600px;
-    font-size: 40px;
-}
+
+
 
 /*webdesign*/
 
@@ -580,7 +569,7 @@ footer{
     .showcase button{
         width: 35vw;
         height: 8vh;
-        font-size: 10px;
+        font-size: 15px;
         margin-top: 30px;
     }
     .album_content h1{
