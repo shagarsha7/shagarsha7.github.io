@@ -2,6 +2,7 @@
 *{
     font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body,p,h1,h2,h3{
     margin: 0;
