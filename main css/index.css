@@ -552,6 +552,8 @@ footer{
     }
     .showcase{
         background: url(../images/show.jpg) no-repeat;
+
+        
     }
     .menu img{
         width: 5vw;
@@ -562,16 +564,18 @@ footer{
         min-height: 100vh;
     }
     .showcase h1{
-        font-size: 40px;
+        font-size: 60px;
+        line-height: 1.3;
     }
     .showcase_content{
-        margin-left: 30px;
+        margin: 0;
+        text-align: center;
     }
     .showcase button{
-        width: 35vw;
-        height: 8vh;
-        font-size: 15px;
+        
+        font-size: 18px;
         margin-top: 30px;
+        margin:30px auto;
     }
     .album_content h1{
         font-size: 20px;
